@@ -11,7 +11,7 @@ const Start = () => {
             宣言
           </h1>
         </div>
-        <Link className="btn btn-dark px-5" to="/Game1">
+        <Link className="btn btn-dark px-5" to="/comics/Game1">
           <span className="display-4 fw-bold">開始製作</span>
         </Link>
       </div>
