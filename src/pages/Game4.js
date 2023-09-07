@@ -5,18 +5,10 @@ export const Game4 = () => {
   const handleCopy = (id) => {
     const element = document.querySelector(`#${id}`);
     switch (element.textContent) {
-      case "____":
-        alert("請先選擇選項喔！");
-        break;
-      case "planning the meal":
-        copy("a man is thinking what to eat at lunch");
+      case "My lunch, zero food waste":
+        copy("a man is smiling to the front and give a victory pose");
         alert("複製指令成功！");
         break;
-      case "preserving the food right":
-        copy("");
-        alert("複製指令成功！");
-      case "using leftovers":
-        alert("複製指令成功！");
     }
   };
   return (
@@ -25,9 +17,8 @@ export const Game4 = () => {
         <h1 className="display-2 fw-bold mb-5">第四幕</h1>
         <div className="bg-white bg-opacity-75 p-3 border border-3 border-dark mb-5 position-relative">
           <p className="display-4 mb-0">
-            I want to share a story about{" "}
             <span id="key" className="fw-bold">
-              ____
+              My lunch, zero food waste
             </span>
             .
           </p>
@@ -43,40 +34,6 @@ export const Game4 = () => {
               }}
             >
               複製指令
-            </span>
-          </button>
-        </div>
-        <div className="d-flex justify-content-space align-items-center">
-          <button type="button" className="btn btn-dark m-3">
-            <span
-              className="display-6"
-              onClick={() => {
-                document.querySelector("#key").textContent =
-                  "planning the meal";
-              }}
-            >
-              Planning the meal
-            </span>
-          </button>
-          <button type="button" className="btn btn-dark m-3">
-            <span
-              className="display-6"
-              onClick={() => {
-                document.querySelector("#key").textContent =
-                  "preserving the food right";
-              }}
-            >
-              Preserving the food right
-            </span>
-          </button>
-          <button type="button" className="btn btn-dark m-3">
-            <span
-              className="display-6"
-              onClick={() => {
-                document.querySelector("#key").textContent = "using leftovers";
-              }}
-            >
-              Using leftovers
             </span>
           </button>
         </div>

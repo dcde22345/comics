@@ -8,14 +8,15 @@ export const Game3 = () => {
       case "____":
         alert("請先選擇選項喔！");
         break;
-      case "planning the meal":
-        copy("a man is thinking what to eat at lunch");
+      case "donate it to food bank":
+        copy("a man is danating food");
         alert("複製指令成功！");
         break;
-      case "preserving the food right":
-        copy("");
+      case "refrigerate it":
+        copy("a man is refrigerate food to refrigerator");
         alert("複製指令成功！");
-      case "using leftovers":
+      case "get less food":
+        copy("a man is shopping at groceries shop")
         alert("複製指令成功！");
     }
   };
@@ -25,7 +26,7 @@ export const Game3 = () => {
         <h1 className="display-2 fw-bold mb-5">第三幕</h1>
         <div className="bg-white bg-opacity-75 p-3 border border-3 border-dark mb-5 position-relative">
           <p className="display-4 mb-0">
-            I want to share a story about{" "}
+            I can{" "}
             <span id="key" className="fw-bold">
               ____
             </span>
@@ -52,36 +53,38 @@ export const Game3 = () => {
               className="display-6"
               onClick={() => {
                 document.querySelector("#key").textContent =
-                  "planning the meal";
+                  "donate it to food bank";
               }}
             >
-              Planning the meal
+              donate it to food bank
             </span>
           </button>
           <button type="button" className="btn btn-dark m-3">
             <span
               className="display-6"
               onClick={() => {
-                document.querySelector("#key").textContent =
-                  "preserving the food right";
+                document.querySelector("#key").textContent = "refrigerate it";
               }}
             >
-              Preserving the food right
+              refrigerate it
             </span>
           </button>
           <button type="button" className="btn btn-dark m-3">
             <span
               className="display-6"
               onClick={() => {
-                document.querySelector("#key").textContent = "using leftovers";
+                document.querySelector("#key").textContent = "get less food";
               }}
             >
-              Using leftovers
+              get less food
             </span>
           </button>
         </div>
         <div className="control">
-          <Link className="btn btn-dark px-5 mt-5" to="/comics/Game4">
+          <Link className="btn btn-dark px-5 mt-5 mx-3" to="/comics/Game2">
+            <span className="display-6 fw-bold">上一幕</span>
+          </Link>
+          <Link className="btn btn-dark px-5 mt-5 mx-3" to="/comics/Game4">
             <span className="display-6 fw-bold">下一幕</span>
           </Link>
         </div>

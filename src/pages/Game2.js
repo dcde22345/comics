@@ -8,14 +8,12 @@ export const Game2 = () => {
       case "____":
         alert("請先選擇選項喔！");
         break;
-      case "planning the meal":
-        copy("a man is thinking what to eat at lunch");
+      case "have":
+        copy("a plate with leftover food on it");
         alert("複製指令成功！");
         break;
-      case "preserving the food right":
+      case "a empty plate":
         copy("");
-        alert("複製指令成功！");
-      case "using leftovers":
         alert("複製指令成功！");
     }
   };
@@ -25,11 +23,12 @@ export const Game2 = () => {
         <h1 className="display-2 fw-bold mb-5">第二幕</h1>
         <div className="bg-white bg-opacity-75 p-3 border border-3 border-dark mb-5 position-relative">
           <p className="display-4 mb-0">
-            I want to share a story about{" "}
+            I usually{" "}
             <span id="key" className="fw-bold">
               ____
             </span>
-            .
+            {" "}
+            leftover food at lunch.
           </p>
           <button
             type="button"
@@ -52,10 +51,10 @@ export const Game2 = () => {
               className="display-6"
               onClick={() => {
                 document.querySelector("#key").textContent =
-                  "planning the meal";
+                  "have";
               }}
             >
-              Planning the meal
+              have
             </span>
           </button>
           <button type="button" className="btn btn-dark m-3">
@@ -63,25 +62,18 @@ export const Game2 = () => {
               className="display-6"
               onClick={() => {
                 document.querySelector("#key").textContent =
-                  "preserving the food right";
+                  "have no";
               }}
             >
-              Preserving the food right
-            </span>
-          </button>
-          <button type="button" className="btn btn-dark m-3">
-            <span
-              className="display-6"
-              onClick={() => {
-                document.querySelector("#key").textContent = "using leftovers";
-              }}
-            >
-              Using leftovers
+              have no
             </span>
           </button>
         </div>
         <div className="control">
-          <Link className="btn btn-dark px-5 mt-5" to="/comics/Game3">
+          <Link className="btn btn-dark px-5 mt-5 mx-3" to="/comics/Game1">
+            <span className="display-6 fw-bold">上一幕</span>
+          </Link>
+          <Link className="btn btn-dark px-5 mt-5 mx-3" to="/comics/Game3">
             <span className="display-6 fw-bold">下一幕</span>
           </Link>
         </div>

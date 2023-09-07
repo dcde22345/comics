@@ -13,9 +13,10 @@ const Game1 = () => {
         alert("複製指令成功！");
         break;
       case "preserving the food right":
-        copy("");
+        copy("a man opened a refrigerator that full of food");
         alert("複製指令成功！");
       case "using leftovers":
+        copy("a man is cooking in the kitchen");
         alert("複製指令成功！");
     }
   };
