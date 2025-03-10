@@ -65,25 +65,25 @@
 ## 🎮 遊戲範例
 
 ### **第一幕**
-學生選擇 **「Planning the meal」**，Stable Diffusion 會生成：
+學生選擇 **「Planning the meal」**，貼到Stable Diffusion生成圖片：
 ```text
 a man is thinking what to eat at lunch
 ```
 
 ### **第二幕**
-學生選擇 **「have leftover food」**，Stable Diffusion 會生成：
+學生選擇 **「have leftover food」**，貼到Stable Diffusion生成圖片：
 ```text
 a plate with leftover food on it
 ```
 
 ### **第三幕**
-學生選擇 **「donate it to food bank」**，Stable Diffusion 會生成：
+學生選擇 **「donate it to food bank」**，貼到Stable Diffusion生成圖片：
 ```text
 a man is donating food
 ```
 
 ### **第四幕**
-最終畫面：「**My lunch, zero food waste**」，Stable Diffusion 會生成：
+最終畫面：「**My lunch, zero food waste**」，貼到Stable Diffusion生成圖片：
 ```text
 a man is smiling to the front and giving a victory pose
 ```
